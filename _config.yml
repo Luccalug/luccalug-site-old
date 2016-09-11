@@ -1,0 +1,7 @@
+name: Luccalug
+description: Lucca Linux User Group
+paginate: 10
+gems: [jekyll-paginate]
+baseurl: '/blog'
+excerpt_separator: <!--more-->
+

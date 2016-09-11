@@ -1,0 +1,37 @@
+<!-- Header -->
+<div id="header-wrapper">
+    <div id="header">
+
+        <!-- Logo -->
+        <img src="{{ site.baseurl }}/assets/images/luccalug.jpg">
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                {% assign current = page.url | downcase | split: '/' %}
+
+                <li {% if current[1] == 'index.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
+                <li {% if current[1] == 'blog' %}class='current'{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>
+                <li><a href="{{ site.baseurl }}/associazione.html">Associazione</a></li>
+                <li><a href="{{ site.baseurl }}/dove-siamo.html">Dove siamo</a></li>
+                <li>
+                    <a href="">Software</a>
+                    <ul>
+                        <li><a href="#">GNU/Linux</a></li>
+                        <li><a href="#">Programmazione e Software libero</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Hardware</a>
+                    <ul>
+                        <li><a href="#">Elettronica</a></li>
+                        <li><a href="#">Arduino</a></li>
+                        <li><a href="#">RaspberryPI e microPC</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ site.baseurl }}/eventi.html">Eventi settimanali</a></li>
+                <li><a href="{{ site.baseurl }}/linux-day.html">Linux Day</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
