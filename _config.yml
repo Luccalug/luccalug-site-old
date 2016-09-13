@@ -1,7 +1,23 @@
+#Site settings
 name: Luccalug
 description: Lucca Linux User Group
-paginate: 10
-gems: [jekyll-paginate]
 baseurl: ''
 excerpt_separator: <!--more-->
 
+defaults:
+  -
+    scope:
+      path: "_posts/projects"
+    values:
+      category: "projects"
+  -
+    scope:
+      path: "_posts"
+    values:
+      category: "blog"
+
+
+#Build settings
+paginate: 10
+gems: [jekyll-paginate]
+permalink: /:title/

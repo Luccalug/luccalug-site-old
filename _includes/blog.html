@@ -7,7 +7,7 @@
                 <h2>Le ultime dal blog</h2>
             </header>
             <div class="row">
-                {% assign blog_posts = (site.categories.projects) %}
+                {% assign blog_posts = (site.categories.blog) %}
                 {% for post in blog_posts offset: 0 limit: 2 %}
                     <div class="6u">
                         <section class="box">
@@ -20,7 +20,6 @@
                             <footer>
                                 <ul class="actions">
                                     <li><a href="{{ site.baseurl }}{{ post.url }}" class="button icon fa-file-text">Continua a leggere</a></li>
-                                    <li><a href="#" class="button alt icon fa-comment">33 commenti</a></li>
                                 </ul>
                             </footer>
                         </section>
