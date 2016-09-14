@@ -1,4 +1,4 @@
-#Official Luccalug website repository
+# Official Luccalug website repository
 
 www.luccalug.it
 
@@ -7,11 +7,13 @@ Jekyll port by CloudCannon (https://github.com/CloudCannon/DopeTrope-Jekyll-Them
 Hacked and modified by Luccalug
 
 ## Installation
+First of all you need a working installation of jekyll and bundle https://jekyllrb.com/docs/installation/
+then
 Clone the repository
 cd to the cloned directory
   $ bundle install
   $ bundle exec jekyll serve
-Enjoy the website :D
+Enjoy the website locally :D 
 
 ##Contributing
 Fork it ( http://github.com/jekyll/jekyll-paginate/fork )
