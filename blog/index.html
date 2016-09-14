@@ -21,7 +21,7 @@ layout: default
                             <div class="row">
                                 <div class="10u -1u">
                                     <section class="box">
-                                        <a href="#" class="image featured"><img src="{{ site.baseurl }}{{ post.featured }}" alt="" /></a>
+                                        <a href="{{ site.baseurl}}{{ post.url }}" class="image featured"><img src="{{ site.baseurl }}{{ post.featured }}" alt="" /></a>
                                         <header>
                                             <h3>{{ post.title }}</h3>
                                             <p>Posted {{ post.date | date_to_string }}</p>
@@ -37,18 +37,18 @@ layout: default
                             </div>
                         {% endfor %}
                         <!-- Pagination links -->
-                        <div class="pagination">
-                            {% if paginator.previous_page %}
-                                <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-                            {% else %}
-                                <span class="previous">Previous</span>
-                            {% endif %}
-                            <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-                            {% if paginator.next_page %}
-                                <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-                            {% else %}
-                                <span class="next ">Next</span>
-                            {% endif %}
+                        <div class="row">
+                            <div class="10u -1u">
+                                <footer>
+                                    {% if paginator.previous_page %}
+                                        <a href="{{ paginator.previous_page_path }}" class="button">Vai indietro</a>
+                                    {% endif %}
+                                    <span class="page_number ">Pagina: {{ paginator.page }} di {{ paginator.total_pages }}</span>
+                                    {% if paginator.next_page %}
+                                        <a href="{{ paginator.next_page_path }}" class="button">Torna avanti</a>
+                                    {% endif %}
+                                </footer>
+                            </div>
                         </div>
                     </section>
 
