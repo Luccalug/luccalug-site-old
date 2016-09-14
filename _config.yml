@@ -3,21 +3,21 @@ name: Luccalug
 description: Lucca Linux User Group
 baseurl: ''
 excerpt_separator: <!--more-->
+gems: [jekyll-paginate]
+paginate: 2
+paginate_path: "/blog/page:num/"
+
 
 defaults:
   -
     scope:
       path: "_posts/projects"
     values:
+      layout: "post"
       category: "projects"
   -
     scope:
       path: "_posts"
     values:
+      layout: "post"
       category: "blog"
-
-
-#Build settings
-paginate: 10
-gems: [jekyll-paginate]
-permalink: /:title/
