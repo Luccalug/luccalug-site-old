@@ -41,11 +41,11 @@ layout: default
                             <div class="10u -1u">
                                 <footer>
                                     {% if paginator.previous_page %}
-                                        <a href="{{ paginator.previous_page_path }}" class="button">Vai indietro</a>
+                                        <a href="{{ paginator.previous_page_path }}" class="button icon fa-forward">Torna avanti</a>
                                     {% endif %}
                                     <span class="page_number ">Pagina: {{ paginator.page }} di {{ paginator.total_pages }}</span>
                                     {% if paginator.next_page %}
-                                        <a href="{{ paginator.next_page_path }}" class="button">Torna avanti</a>
+                                        <a href="{{ paginator.next_page_path }}" class="button icon fa-backward">Vai indietro</a>
                                     {% endif %}
                                 </footer>
                             </div>
