@@ -8,29 +8,31 @@
         <!-- Nav -->
         <nav id="nav">
             <ul>
-                {% assign current = page.url | downcase | split: '/' %}
+                {% assign current = page.url | replace : '/', '' | replace: ".html", ''%}
 
-                <li {% if current[1] == 'index.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
-                <li {% if current[1] == 'blog' %}class='current'{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>
-                <li><a href="{{ site.baseurl }}/associazione.html">Associazione</a></li>
-                <li><a href="{{ site.baseurl }}/dove-siamo.html">Dove siamo</a></li>
+                <!-- A little Hack-->
+                <!-- Because page.url return a '/' for the index, with the replace we get an empty "current" variable -->
+                <li {% if current == '' %}class='current'{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
+                <li {% if current == 'blog' %}class='current'{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>
+                <li {% if current == 'associazione' %}class="current" {%endif%}><a href="{{ site.baseurl }}/associazione.html">Associazione</a></li>
+                <li {% if current == 'dove-siamo' %}class="current" {%endif%}><a href="{{ site.baseurl }}/dove-siamo.html">Dove siamo</a></li>
                 <li>
                     <a href="">Software</a>
                     <ul>
-                        <li><a href="#">GNU/Linux</a></li>
-                        <li><a href="#">Programmazione e Software libero</a></li>
+                        <li><a href="/gnulinux.html">GNU/Linux</a></li>
+                        <li><a href="/programmazione.html">Programmazione e Software libero</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="">Hardware</a>
                     <ul>
-                        <li><a href="#">Elettronica</a></li>
-                        <li><a href="#">Arduino</a></li>
-                        <li><a href="#">RaspberryPI e microPC</a></li>
+                        <li><a href="/elettronica.html">Elettronica</a></li>
+                        <li><a href="/arduino.html">Arduino</a></li>
+                        <li><a href="/raspberry.html">RaspberryPI e microPC</a></li>
                     </ul>
                 </li>
-                <li><a href="{{ site.baseurl }}/eventi.html">Eventi settimanali</a></li>
-                <li><a href="{{ site.baseurl }}/linux-day.html">Linux Day</a></li>
+                <li {% if current == 'eventi' %}class="current" {%endif%}><a href="{{ site.baseurl }}/eventi.html">Eventi settimanali</a></li>
+                <li {% if current == 'linux-day' %}class="current" {%endif%}><a href="{{ site.baseurl }}/linux-day.html">Linux Day</a></li>
             </ul>
         </nav>
     </div>
