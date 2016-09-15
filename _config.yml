@@ -1,9 +1,12 @@
 #Site settings
 name: Luccalug
 description: Lucca Linux User Group
+url: www.luccalug.it
 baseurl: ''
 excerpt_separator: <!--more-->
-gems: [jekyll-paginate]
+gems: 
+  - jekyll-paginate
+  - jekyll-feed
 paginate: 2
 paginate_path: "/blog/page:num/"
 
