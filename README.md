@@ -13,7 +13,7 @@ First of all you need a working installation of jekyll and bundle https://jekyll
 
 then
 
->Clone the repository
+>git clone https://github.com/Luccalug/luccalug.github.io
 
 >cd to the cloned directory
 
@@ -24,7 +24,7 @@ then
 Enjoy the website locally :D 
 
 ##Contributing
-Fork it ( http://github.com/jekyll/jekyll-paginate/fork )
+Fork it ( https://github.com/Luccalug/luccalug.github.io/fork )
 
 Create your feature branch (git checkout -b my-new-feature)
 
