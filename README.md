@@ -13,9 +13,9 @@ First of all you need a working installation of jekyll and bundle https://jekyll
 
 then
 
->git clone https://github.com/Luccalug/luccalug.github.io
+>  $ git clone https://github.com/Luccalug/luccalug.github.io
 
->cd to the cloned directory
+>  $ cd luccalug.github.io
 
 >  $ bundle install
 
