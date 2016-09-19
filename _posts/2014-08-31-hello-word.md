@@ -1,6 +1,6 @@
 ---
 title: Stallman, il nostro Dio
-featured: /assets/images/stallman.jpg
+image: /assets/images/stallman.jpg
 ---
 
 <p>Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>

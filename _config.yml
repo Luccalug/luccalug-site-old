@@ -1,14 +1,14 @@
 #Site settings
-name: Luccalug
+title: Luccalug
 description: Lucca Linux User Group
 url: www.luccalug.it
 baseurl: ''
 excerpt_separator: <!--more-->
-gems: [jekyll-paginate]
-paginate: 5
-paginate_path: "/blog/page:num/"
+gems:
+  - jekyll-paginate
+  - jekyll-seo-tag
 
-
+#Defaults category for directory
 defaults:
   -
     scope:
@@ -22,3 +22,17 @@ defaults:
     values:
       layout: "post"
       category: "blog"
+
+#Setting for jekyll-paginate
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+#Settings jekyll-seo-tag
+twitter:
+  username: luccalug
+facebook:
+  publisher: 121848141161284
+google_site_verification: 1234
+author: luccalug
+logo: /assets/images/luccalug.jpg
+
