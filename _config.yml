@@ -1,7 +1,7 @@
 #Site settings
 title: Luccalug
 description: Lucca Linux User Group
-url: www.luccalug.it
+url: http://www.luccalug.it
 baseurl: ''
 excerpt_separator: <!--more-->
 gems:
