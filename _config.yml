@@ -3,6 +3,10 @@ title: Luccalug
 description: Lucca Linux User Group
 url: http://www.luccalug.it
 baseurl: ''
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 excerpt_separator: <!--more-->
 gems:
   - jekyll-paginate
