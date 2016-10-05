@@ -2,6 +2,7 @@
 title: Luccalug
 description: Lucca Linux User Group
 url: http://www.luccalug.it
+logo: /assets/images/luccalug.jpg
 baseurl: ''
 markdown: kramdown
 kramdown:
@@ -39,5 +40,4 @@ facebook:
   publisher: 121848141161284
 google_site_verification: 1234
 author: luccalug
-logo: /assets/images/luccalug.jpg
 

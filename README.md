@@ -36,3 +36,4 @@ Create new Pull Request
 
 ##License
 Under CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/ 
+/editor under MIT license, see: https://github.com/tylingsoft/markdown-plus
