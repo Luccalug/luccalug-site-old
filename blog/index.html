@@ -17,9 +17,9 @@ layout: default
                         <header class="major">
                             <h2>The Blog</h2>
                         </header>
-                        {% for post in paginator.posts offset: 0 limit: 4 %}
+                        {% for post in paginator.posts%}
                             <div class="row">
-                                <div class="10u -1u">
+                                <div class="8u -2u">
                                     <section class="box">
                                         <a href="{{ site.baseurl}}{{ post.url }}" class="image featured"><img src="{{ site.baseurl }}{{ post.image}}" alt="" /></a>
                                         <header>
