@@ -276,4 +276,4 @@ man yum
 ```
 
 
-_Claudio_ con la revisione di _Davide_ e _Alessio_
+_Claudio_ con la revisione di _Davide_ e _Alek_
