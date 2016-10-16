@@ -5,6 +5,7 @@ image: /assets/images/package.jpg
 
 Senza alcun dubbio, da quando ho cominciato ad appassionarmi al mondo di GNU/Linux e a provare le varie distribuzioni, uno degli aspetti che mi ha affascinato maggiormente è stato l’uso dei gestori pacchetti (package manager).
 <!--more-->
+
 Arrivando da Windows, il meccanismo di installazione ed aggiornamento mi è piaciuto all’istante, in quanto permette di aggiornare completamente il sistema in pochi semplici passaggi, sia da terminale che tramite un’interfaccia grafica.
 
 Le distribuzioni GNU/Linux possono essere suddivise in base alla tipologia di pacchetto adottata, dove con il termine pacchetto si intende un archivio compresso, contenente i file di un dato programma e le informazioni relative alle sue dipendenze, i permessi dei file da installare ed eventuali script pre e post installazione. Esistono, inoltre, alcuni pacchetti (chiamati metapacchetti) che hanno lo scopo di facilitare l’installazione di altri, strettamente correlati tra loro.
@@ -15,15 +16,14 @@ I principali formati di pacchetti sono:
 - RPM (Red Hat e derivate, Fedora CEntOS OpenSUSE, SLES, ecc…);
 - DEB (Debian e derivate, Ubuntu e derivate, Mint, ecc…).
 
-Questa immagine rende bene l’idea:
-
-[https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg](Linux Distribution Timeline)
+Questa immagine rende bene l’idea: [Linux Distribution Timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
 
 Altre distribuzioni hanno dei formati meno standard, ma personalizzati per i propri gestori pacchetti; ad esempio, ArchLinux usa file con estensione pkg.tar.xz. Altre ancora, quali Slackware e Gentoo, prediligono la compilazione dei pacchetti e la risoluzione delle dipendenze manuali.
 
 I vari formati dei pacchetti vengono, quindi, presi in gestione dai package manager adottati. Ecco i principali:
 
 Gestori pacchetti da linea di comando:
+
 - rpm (RedHat/CEntOS/Fedora/OpenSUSE)
 - yum (CEntOS/Fedora)
 - zypper (OpenSUSE)
@@ -32,6 +32,7 @@ Gestori pacchetti da linea di comando:
 - pacman (ArchLinux)
 
 Gestori pacchetti da interfaccia grafica:
+
 - Synaptic (Debian, Ubuntu)
 - YaST2 (OpenSUSE)
 - packagekit (multi distribuzione ArchLinux, Fedora, ecc..)
@@ -68,194 +69,194 @@ Ecco alcuni degli esempi che mi vengono in mente (certo non potrei elencarli tut
 
 #### PACMAN
 
-Aggiornamento dell’elenco pacchetti:
+Aggiornamento dell’elenco pacchetti:  
 ```
 pacman -Sy
 ```
 
-Elenco degli aggiornamenti disponibili (dopo aver aggiornato l’elenco):
+Elenco degli aggiornamenti disponibili (dopo aver aggiornato l’elenco):  
 ```
 pacman -Qu
 ```
 
-Installazione di un pacchetto:
+Installazione di un pacchetto:  
 ```
 pacman -S firefox
 ```
 
-Rimozione di un pacchetto:
+Rimozione di un pacchetto:  
 ```
 pacman -R firefox
 ```
 
-Backup della lista pacchetti: 
+Backup della lista pacchetti:  
 ```
 pacman -Qqen > listapacchetti
 ```
 
-Re-installazione dei pacchetti da una lista:
+Re-installazione dei pacchetti da una lista:  
 ```
 pacman -S - < listapacchetti
 ```
 
-Pulizia dei pacchetti non più installati (ad esempio, le vecchie versioni o vecchie dipendenze) dalla cache dei pacchetti:
+Pulizia dei pacchetti non più installati (ad esempio, le vecchie versioni o vecchie dipendenze) dalla cache dei pacchetti:  
 ```
 pacman -Sc
 ```
 
-Pulizia completa della cache dei pacchetti:
+Pulizia completa della cache dei pacchetti:  
 ```
 pacman -Scc
 ```
 
-Rimozione dei pacchetti installati, ma non più richiesti:
+Rimozione dei pacchetti installati, ma non più richiesti:  
 ```
 pacman -Qdt
 ```
 
 #### RPM
 
-Elencare i pacchetti installati:
+Elencare i pacchetti installati:  
 ```
 rpm -qa
 ```
 
-Elencare i file installati da un pacchetto:
+Elencare i file installati da un pacchetto:  
 ```
 rpm -ql firefox
 ```
 
-Ottenere il pacchetto che ha installato il file:
+Ottenere il pacchetto che ha installato il file:  
 ```
 rpm -qf /usr/bin/firefox
 ```
 
 #### YUM
 
-Aggiornamento dell’elenco dei pacchetti ed elenco degli aggiornamenti disponibili:
+Aggiornamento dell’elenco dei pacchetti ed elenco degli aggiornamenti disponibili:  
 ```
 yum check-update
 ```
 
-Aggiornamento del sistema:
+Aggiornamento del sistema:  
 ```
 yum update
 ```
 
-Installazione di un pacchetto:
+Installazione di un pacchetto:  
 ```
 yum install firefox
 ```
 
-Rimozione di un pacchetto:
+Rimozione di un pacchetto:  
 ```
 yum remove firefox
 ```
 
-Installazione di un gruppo di pacchetti:
+Installazione di un gruppo di pacchetti:  
 ```
 yum groupinstall "KDE"
 ```
 
-Rimozione di un gruppo di pacchetti:
+Rimozione di un gruppo di pacchetti:  
 ```
 yum groupremove “KDE”
 ```
 
-Pulizia completa della cache dei pacchetti:
+Pulizia completa della cache dei pacchetti:  
 ```
 yum clean all
 ```
 
-Elenco degli aggiornamenti specificando quali sono quelli sicurezza: 
+Elenco degli aggiornamenti specificando quali sono quelli sicurezza:  
 ```
 yum check-update --security
 ```
 
-Verifica dell’integrità dei pacchetti e dei file installati (richiede il plugin yum-plugin-verify):
-tutti i pacchetti:
+Verifica dell’integrità dei pacchetti e dei file installati (richiede il plugin yum-plugin-verify)  
+tutti i pacchetti:  
 ```
 yum verify all
 ```
 
-singolo pacchetto
+singolo pacchetto:  
 ```
 yum verify firefox
 ```
 
 #### zypper
 
-Aggiornamento del sistema:
+Aggiornamento del sistema:  
 ```
 zypper up
 ```
 
 
-Aggiornamento della lista dei pacchetti ed elenco degli aggiornamenti:
+Aggiornamento della lista dei pacchetti ed elenco degli aggiornamenti:  
 ```
 zypper lu
 ```
 
-Installazione di un pacchetto:
+Installazione di un pacchetto:  
 ```
 zypper in firefox
 ```
 
 #### dpkg
 
-Elencare i pacchetti installati:
+Elencare i pacchetti installati:  
 ```
 dpkg -l
 ```
 
-Rimuovere un pacchetto:
+Rimuovere un pacchetto:  
 ```
 dpkg -r firefox
 ```
 
-Elencare i file installati da un pacchetto:
+Elencare i file installati da un pacchetto:  
 ```
 dpkg -L firefox
 ```
 
-Riconfigurare un pacchetto: 
+Riconfigurare un pacchetto:  
 ```
 dpkg --configure firefox
 ```
 
 #### APT
 
-Aggiornamento dell’elenco dei pacchetti:
+Aggiornamento dell’elenco dei pacchetti:  
 ```
 apt-get update
 ```
 
-Aggiornamento del sistema:
+Aggiornamento del sistema:  
 ```
 apt-get upgrade
 ```
 
-Installazione di un pacchetto:
+Installazione di un pacchetto:  
 ```
 apt-get install firefox
 ```
 
-Rimozione di un pacchetto:
+Rimozione di un pacchetto:  
 ```
 apt-get remove firefox
 ```
 
-Rimozione di un pacchetto e delle relative configurazioni:
+Rimozione di un pacchetto e delle relative configurazioni:  
 ```
 apt-get --purge remove firefox
 ```
 
-Pulizia della cache dei pacchetti non installati sul sistema:
+Pulizia della cache dei pacchetti non installati sul sistema:  
 ```
 apt-get autoclean
 ```
 
-Pulizia completa della cache dei pacchetti:
+Pulizia completa della cache dei pacchetti:  
 ```
 apt-get clean
 ```
