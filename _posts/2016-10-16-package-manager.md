@@ -3,10 +3,8 @@ title: I gestori di pacchetti
 image: /assets/images/package.jpg
 ---
 
-[# ](http://mdp.tylingsoft.com/)[Package](http://mdp.tylingsoft.com[/) ](http://mdp.tylingsoft.com/)manager
-
 Senza alcun dubbio, da quando ho cominciato ad appassionarmi al mondo di GNU/Linux e a provare le varie distribuzioni, uno degli aspetti che mi ha affascinato maggiormente è stato l’uso dei gestori pacchetti (package manager).
-
+<!--more-->
 Arrivando da Windows, il meccanismo di installazione ed aggiornamento mi è piaciuto all’istante, in quanto permette di aggiornare completamente il sistema in pochi semplici passaggi, sia da terminale che tramite un’interfaccia grafica.
 
 Le distribuzioni GNU/Linux possono essere suddivise in base alla tipologia di pacchetto adottata, dove con il termine pacchetto si intende un archivio compresso, contenente i file di un dato programma e le informazioni relative alle sue dipendenze, i permessi dei file da installare ed eventuali script pre e post installazione. Esistono, inoltre, alcuni pacchetti (chiamati metapacchetti) che hanno lo scopo di facilitare l’installazione di altri, strettamente correlati tra loro.
