@@ -18,7 +18,7 @@ I principali formati di pacchetti sono:
 
 Questa immagine rende bene l’idea: [Linux Distribution Timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
 
-Altre distribuzioni hanno dei formati meno standard, ma personalizzati per i propri gestori pacchetti; ad esempio, ArchLinux usa file con estensione pkg.tar.xz. Altre ancora, quali Slackware e Gentoo, prediligono la compilazione dei pacchetti e la risoluzione delle dipendenze manuali.
+Altre distribuzioni hanno dei formati meno standard, ma personalizzati per i propri gestori pacchetti; ad esempio, ArchLinux usa file con estensione pkg.tar.xz. Altre ancora, prediligono la compilazione dei pacchetti e la risoluzione delle dipendenze manuali.
 
 I vari formati dei pacchetti vengono, quindi, presi in gestione dai package manager adottati. Ecco i principali:
 
