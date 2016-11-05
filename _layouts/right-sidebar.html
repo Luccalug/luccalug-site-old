@@ -1,0 +1,20 @@
+{% include header.html %}
+<body class="right-sidebar">
+
+    {% include nav.html %}
+
+    <!-- Main -->
+    <div id="main-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="8u">
+
+                    <!-- Content -->
+                    <article class="box post">
+                        <a href="#" class="image featured"><img src="{{ site.baseurl }}{{ page.image }}" alt="" /></a>
+                        {{ content | markdownify}}                                        
+                    </div>
+                    {% include {{ page.sidebar }} %}
+                </div>
+            </div>
+        </div>

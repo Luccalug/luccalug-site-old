@@ -599,6 +599,18 @@
 				ul.social li a.fa-tumblr:hover		{ background: #3b5671; }
 				ul.social li a.fa-google-plus		{ background: #da2713; }
 				ul.social li a.fa-google-plus:hover	{ background: #ea3723; }
+                ul.social li a.fa-youtube           { background: #da2713; }
+                ul.social li a.fa-youtube:hover	    { background: #ea3723; }
+                ul.social li a.fa-reddit            { background: #ff4500;}
+                ul.social li a.fa-reddit:hover	    { background: #ff6600; }
+                ul.social li a.fa-github            { background: #000000;}
+                ul.social li a.fa-github:hover	    { background: #4078c0; }
+                ul.social li a.fa-envelope          { background: #70c65e;}
+                ul.social li a.fa-envelope:hover	{ background: #9dc695; }
+                ul.social li a.fa-list              { background: #808080;}
+                ul.social li a.fa-list:hover	    { background: #b4b4b4; }
+                ul.social li a.fa-map-marker        { background: #e6b900;}
+                ul.social li a.fa-map-marker:hover	{ background: #ffdf5a; }
 
 		ol
 		{

@@ -1,0 +1,18 @@
+{% include header.html %}
+<body class="no-sidebar">
+    {% include nav.html %}
+
+    <!-- Main -->
+    <div id="main-wrapper">
+        <div class="container">
+
+            <!-- Content -->
+            <article class="box post">
+                <a href="#" class="image featured"><img src="{{ site.baseurl }}{{ page.image }}" alt="" /></a>
+                {{ content | markdownify}}
+            </article>
+
+        </div>
+    </div>
+
+{% include footer.html %}

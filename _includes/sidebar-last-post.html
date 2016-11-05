@@ -1,0 +1,16 @@
+<div class="4u">
+
+    <!-- Last-post Sidebar -->
+    {% for post in site.posts offset: 0 limit: 2 %}
+        <section class="box">
+            <a href="#" class="image featured"><img src="{{ site.baseurl }}{{ post.image}}" alt="" /></a>
+            <header>
+                <h3>{{ post.title }}</h3>
+            </header>
+            {{ post.excerpt }}
+            <footer>
+                <a href="{{ site.baseurl }}{{ post.url }}" class="button alt">Continua a leggere</a>
+            </footer>
+        </section>
+    {% endfor %}
+</div>
